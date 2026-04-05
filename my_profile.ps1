@@ -53,7 +53,7 @@ function prompt {
 # -------------------------------------------------------
 # トランスクリプト
 # -------------------------------------------------------
-$transcriptDir = "C:\work\poweshellLog"
+$transcriptDir = "C:\work\powershellLog"
 if (-not (Test-Path $transcriptDir)) { New-Item -ItemType Directory -Path $transcriptDir | Out-Null }
 
 $transcriptPath = Join-Path $transcriptDir "Transcript_$(Get-Date -Format 'yyyy_MM_dd_HH-mm-ss').log"
